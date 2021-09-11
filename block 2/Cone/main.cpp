@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <windows.h>
 #define _USE_MATH_DEFINES
 
 using namespace std;
@@ -9,12 +8,8 @@ float Volume (float, float, float);
 float Area (float, float, float);
 
 int main () {
-  SetConsoleCP(1251);
-  SetConsoleOutputCP(1251);
-  setlocale(LC_ALL,"rus");
-	
 	float R, r, h;
-	cout << "¬ведите: R, r, h: ";
+	cout << "Enter: R, r, h: ";
 	cin >> R >> r >> h;
 	
 	if (R > 0 && r > 0 && h > 0 && R > r)  {
@@ -22,7 +17,7 @@ int main () {
 		cout << Area(R, r, sqrt(pow(h, 2) + pow(R, 2))) << endl;
 	}
 	else {
-		cout << "ќшибка" << endl;
+		cout << "Error" << endl;
   }
 	
 	return 0;

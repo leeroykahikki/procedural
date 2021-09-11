@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include <windows.h>
 #include <string>
 #include <cstring>
 #include <fstream>
@@ -10,10 +9,6 @@ void SortAlgo(string, int);
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "rus");
-
     string line;
     ifstream in("./sort.txt");
 
