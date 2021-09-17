@@ -11,7 +11,11 @@ int main () {
 	
 	if (fabs(x) < 1) {
 		if (x != 0)
-			cout << "W = " << (a * log(fabs(x))) << endl;
+      if (a * log(fabs(x)) != -0) {
+			  cout << "W = " << (a * log(fabs(x))) << endl;
+      } else {
+        cout << "W = 0" << endl;
+      }
 		else 
 			cout << "Error";
 	}
