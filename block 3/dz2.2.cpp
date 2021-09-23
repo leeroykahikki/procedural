@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
-  double S, m, p;
-  int n;
+  double S, m, p, n;
   cout << "Enter S, m, n: ";
   cin >> S >> m >> n;
 
